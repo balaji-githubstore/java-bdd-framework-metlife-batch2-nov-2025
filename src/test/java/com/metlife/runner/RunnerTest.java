@@ -8,6 +8,7 @@ import io.cucumber.testng.CucumberOptions;
         ,glue = {"com.metlife.steps"}
         ,plugin = {"html:target/cucumber-report.html"}
         ,tags = "@employee"
+//        ,dryRun = true
 )
 public class RunnerTest extends AbstractTestNGCucumberTests {
 }

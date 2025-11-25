@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Demo1Steps {
+public class LoginSteps {
     @Given("User has browser with orangehrm application")
     public void user_has_browser_with_orangehrm_application() {
         System.out.println("given");
