@@ -7,7 +7,7 @@ Feature: Login
   Background:
     Given User has browser with orangehrm application
 
-  @smoke  @regression
+  @smoke  @regression @valid
   Scenario: ValidLogin
     When User entered username as "Admin"
     And User entered password as "admin123"
