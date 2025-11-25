@@ -10,9 +10,13 @@ Feature: Login
     And User click on login
     Then User should get into dashboard with "Quick Launch" header
 
-  Scenario: InvalidLogin
+  Scenario Outline: InvalidLogin
     Given User has browser with orangehrm application
-    When User entered username as "john"
-    And User entered password as "john123"
+    When User entered username as "<username>"
+    And User entered password as "<password>"
     And User click on login
-    Then User should get error message "Invalid credentials"
+    Then User should get error message "<expected_error>"
+    Examples:
+      | username | password | expected_error      |
+      | saul     | saul123  | Invalid credentials |
+      | kim      | kim123   | Invalid credentials |
