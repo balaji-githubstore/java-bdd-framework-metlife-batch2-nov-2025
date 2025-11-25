@@ -3,7 +3,7 @@ Feature: Employee
   In order to manage employee records
   as a user
   I would like add, edit, delete employee details
-
+#add valid employee
   @addEmployee
   Scenario Outline: AddValidEmployee
     Given User has browser with orangehrm application
