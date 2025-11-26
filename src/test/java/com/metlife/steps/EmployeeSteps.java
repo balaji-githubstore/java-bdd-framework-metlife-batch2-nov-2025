@@ -18,7 +18,7 @@ public class EmployeeSteps {
     }
     @When("User click on Add Employee")
     public void user_click_on_add_employee() {
-
+        //complete the automation for add employee - take code from bdd github
     }
     @When("User fill the employee details")
     public void user_fill_the_employee_details(DataTable dataTable) {
