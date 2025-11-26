@@ -4,6 +4,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import java.time.Duration;
 
@@ -14,7 +15,7 @@ public class AutomationHooks {
     @Before
     public void beforeScenario()
     {
-        driver=new ChromeDriver();
+        driver=new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
