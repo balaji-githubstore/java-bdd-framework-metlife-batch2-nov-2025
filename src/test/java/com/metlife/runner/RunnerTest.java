@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         features = {"src/test/resources/feature"}
         ,glue = {"com.metlife.steps","com.metlife.hooks"}
         ,plugin = {"html:target/cucumber-report.html"}
-        ,tags = "@employee"
+//        ,tags = "@employee"
 //        ,dryRun = true
 )
 public class RunnerTest extends AbstractTestNGCucumberTests {
